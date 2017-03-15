@@ -167,7 +167,7 @@ int main() {
 
                     if (pkt.stream_index == videoIndex_v) {
                         if (pkt.pts == AV_NOPTS_VALUE) {
-                            //Write PTS
+                            // Write PTS
                             AVRational time_base1 = in_stream->time_base;
                             // Duration between 2 frames
                             int64_t calc_duration = (int64_t) ((double) AV_TIME_BASE / av_q2d(in_stream->r_frame_rate));
@@ -240,7 +240,7 @@ int main() {
         pkt.stream_index = stream_index;
 
 
-        printf("Write 1 Packet. size:%5d\tpts:%lld\n", pkt.size, pkt.pts);
+        printf("Write 1 Packet. size:%5d\tpts:%lld\tdts:%lld\n", pkt.size, pkt.pts,pkt.dts);
 
         // Write
         if (av_interleaved_write_frame(ofmt_ctx, &pkt) < 0) {
@@ -261,7 +261,7 @@ int main() {
 #endif
 
     end:
-    
+
     avformat_close_input(&ifmt_ctx_v);
     avformat_close_input(&ifmt_ctx_a);
     /* close output */
