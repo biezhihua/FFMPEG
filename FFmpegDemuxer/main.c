@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <libavformat/avformat.h>
 
-#define USE_H264BSF 0
+#define USE_H264BSF 1
 
 int main() {
 
@@ -89,6 +89,8 @@ int main() {
     printf("\n==============Output Audio============\n");
     av_dump_format(ofmt_ctx_a, 0, out_filename_a, 1);
     printf("\n======================================\n");
+
+
     //Open output file
     if (!(ofmt_v->flags & AVFMT_NOFILE)) {
         if (avio_open(&ofmt_ctx_v->pb, out_filename_v, AVIO_FLAG_WRITE) < 0) {
