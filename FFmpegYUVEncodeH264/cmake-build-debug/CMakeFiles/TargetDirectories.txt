@@ -1,0 +1,3 @@
+/Users/biezhihua/studyspace/FFMPEG/FFmpegYUVEncodeH264/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/biezhihua/studyspace/FFMPEG/FFmpegYUVEncodeH264/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/biezhihua/studyspace/FFMPEG/FFmpegYUVEncodeH264/cmake-build-debug/CMakeFiles/FFmpegYUVEncodeH264.dir
