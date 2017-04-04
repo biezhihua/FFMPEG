@@ -29,7 +29,7 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
+            <state relative-caret-position="190">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
@@ -39,10 +39,18 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="439" column="41" lean-forward="false" selection-start-line="439" selection-start-column="41" selection-end-line="439" selection-end-column="41" />
+            <state relative-caret-position="209">
+              <caret line="115" column="23" lean-forward="false" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1490462004000" expanded="true" signature="386:495" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="658:1644" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="1753:5516" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="5708:11114" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="11187:12217" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="12313:14042" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="14124:15540" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="15594:16041" ph="{...}" />
+                <marker date="1490462004000" expanded="true" signature="16054:20824" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,7 +59,7 @@
       <file leaf-file-name="avio.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avio.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
+            <state relative-caret-position="12312">
               <caret line="648" column="4" lean-forward="false" selection-start-line="648" selection-start-column="4" selection-end-line="648" selection-end-column="4" />
               <folding />
             </state>
@@ -61,7 +69,7 @@
       <file leaf-file-name="opt.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/opt.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="12996">
               <caret line="684" column="4" lean-forward="false" selection-start-line="684" selection-start-column="4" selection-end-line="684" selection-end-column="4" />
               <folding />
             </state>
@@ -71,8 +79,8 @@
       <file leaf-file-name="channel_layout.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/channel_layout.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+            <state relative-caret-position="3268">
+              <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,7 +89,7 @@
       <file leaf-file-name="frame.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/frame.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="10108">
               <caret line="532" column="8" lean-forward="false" selection-start-line="532" selection-start-column="8" selection-end-line="532" selection-end-column="8" />
               <folding />
             </state>
@@ -91,7 +99,7 @@
       <file leaf-file-name="avcodec.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
+            <state relative-caret-position="81016">
               <caret line="4264" column="4" lean-forward="false" selection-start-line="4264" selection-start-column="4" selection-end-line="4264" selection-end-column="4" />
               <folding />
             </state>
@@ -101,7 +109,7 @@
       <file leaf-file-name="avutil.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/avutil.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="3610">
               <caret line="190" column="5" lean-forward="false" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
               <folding />
             </state>
@@ -111,10 +119,10 @@
       <file leaf-file-name="avfilter.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavfilter/avfilter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="12008">
               <caret line="632" column="10" lean-forward="false" selection-start-line="632" selection-start-column="10" selection-end-line="632" selection-end-column="10" />
               <folding>
-                <element signature="e#22088#22093#0" expanded="true" />
+                <element signature="e#22088#22093#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -123,7 +131,7 @@
       <file leaf-file-name="avformat.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avformat.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="39501">
               <caret line="2079" column="4" lean-forward="false" selection-start-line="2079" selection-start-column="4" selection-end-line="2079" selection-end-column="4" />
               <folding />
             </state>
@@ -176,8 +184,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="23" />
+    <option name="x" value="465" />
+    <option name="y" value="33" />
     <option name="width" value="1440" />
     <option name="height" value="801" />
   </component>
@@ -240,6 +248,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="ffmpeg.c&#9;null&#9;null" />
   </component>
   <component name="RunManager" selected="Application.FFmpegTranscoder">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -436,6 +445,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="94dca93f-0cef-4858-915d-c4162fbfdeed" name="Default" comment="" />
@@ -448,35 +460,37 @@
       <workItem from="1490107977294" duration="5232000" />
       <workItem from="1490285299838" duration="1909000" />
       <workItem from="1490371225405" duration="3089000" />
-      <workItem from="1490450665966" duration="10996000" />
+      <workItem from="1490450665966" duration="11101000" />
+      <workItem from="1490713652931" duration="169000" />
+      <workItem from="1491201698123" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24645000" />
+    <option name="totallyTimeSpent" value="24931000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="23" width="1440" height="801" extended-state="0" />
-    <editor active="false" />
+    <frame x="465" y="33" width="1440" height="801" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24876674" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39970717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39970717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -507,18 +521,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>113</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avformat.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39501">
+          <caret line="2079" column="4" lean-forward="false" selection-start-line="2079" selection-start-column="4" selection-end-line="2079" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -532,7 +547,107 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1490462004000" expanded="true" signature="386:495" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="658:1644" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="1753:5516" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="5708:11114" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="11187:12217" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="12313:14042" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="14124:15540" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="15594:16041" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="16054:20824" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12312">
+          <caret line="648" column="4" lean-forward="false" selection-start-line="648" selection-start-column="4" selection-end-line="648" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/opt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12996">
+          <caret line="684" column="4" lean-forward="false" selection-start-line="684" selection-start-column="4" selection-end-line="684" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/channel_layout.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3268">
+          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/frame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10108">
+          <caret line="532" column="8" lean-forward="false" selection-start-line="532" selection-start-column="8" selection-end-line="532" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81016">
+          <caret line="4264" column="4" lean-forward="false" selection-start-line="4264" selection-start-column="4" selection-end-line="4264" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/avutil.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3610">
+          <caret line="190" column="5" lean-forward="false" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavfilter/avfilter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12008">
+          <caret line="632" column="10" lean-forward="false" selection-start-line="632" selection-start-column="10" selection-end-line="632" selection-end-column="10" />
+          <folding>
+            <element signature="e#22088#22093#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avformat.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39501">
+          <caret line="2079" column="4" lean-forward="false" selection-start-line="2079" selection-start-column="4" selection-end-line="2079" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490462004000" expanded="true" signature="386:495" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="658:1644" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="1753:5516" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="5708:11114" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="11187:12217" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="12313:14042" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="14124:15540" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="15594:16041" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="16054:20824" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -557,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4370">
           <caret line="230" column="60" lean-forward="false" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,7 +703,7 @@
         <state relative-caret-position="11438">
           <caret line="602" column="5" lean-forward="false" selection-start-line="602" selection-start-column="5" selection-end-line="602" selection-end-column="5" />
           <folding>
-            <element signature="e#22088#22093#0" expanded="true" />
+            <element signature="e#22088#22093#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -616,7 +729,15 @@
         <state relative-caret-position="7182">
           <caret line="378" column="8" lean-forward="false" selection-start-line="378" selection-start-column="8" selection-end-line="378" selection-end-column="8" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1490462004000" expanded="true" signature="386:495" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="658:1644" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="1753:5516" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="5708:11114" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="11187:12217" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="12313:14042" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="14124:15540" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="15594:16041" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="16054:20824" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -633,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4370">
           <caret line="230" column="60" lean-forward="false" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +777,7 @@
         <state relative-caret-position="17746">
           <caret line="934" column="4" lean-forward="false" selection-start-line="934" selection-start-column="4" selection-end-line="934" selection-end-column="4" />
           <folding>
-            <element signature="e#22088#22093#0" expanded="true" />
+            <element signature="e#22088#22093#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -684,7 +803,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1490462004000" expanded="true" signature="386:495" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="658:1644" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="1753:5516" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="5708:11114" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="11187:12217" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="12313:14042" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="14124:15540" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="15594:16041" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="16054:20824" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -701,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4370">
           <caret line="230" column="60" lean-forward="false" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +851,7 @@
         <state relative-caret-position="17746">
           <caret line="934" column="4" lean-forward="false" selection-start-line="934" selection-start-column="4" selection-end-line="934" selection-end-column="4" />
           <folding>
-            <element signature="e#22088#22093#0" expanded="true" />
+            <element signature="e#22088#22093#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -759,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4370">
           <caret line="230" column="60" lean-forward="false" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,13 +891,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/avutil.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="3610">
           <caret line="190" column="5" lean-forward="false" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
           <folding />
         </state>
@@ -781,15 +904,15 @@
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/channel_layout.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+        <state relative-caret-position="3268">
+          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avio.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
+        <state relative-caret-position="12312">
           <caret line="648" column="4" lean-forward="false" selection-start-line="648" selection-start-column="4" selection-end-line="648" selection-end-column="4" />
           <folding />
         </state>
@@ -797,17 +920,17 @@
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavfilter/avfilter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="12008">
           <caret line="632" column="10" lean-forward="false" selection-start-line="632" selection-start-column="10" selection-end-line="632" selection-end-column="10" />
           <folding>
-            <element signature="e#22088#22093#0" expanded="true" />
+            <element signature="e#22088#22093#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/opt.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="12996">
           <caret line="684" column="4" lean-forward="false" selection-start-line="684" selection-start-column="4" selection-end-line="684" selection-end-column="4" />
           <folding />
         </state>
@@ -815,7 +938,7 @@
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavutil/frame.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="10108">
           <caret line="532" column="8" lean-forward="false" selection-start-line="532" selection-start-column="8" selection-end-line="532" selection-end-column="8" />
           <folding />
         </state>
@@ -823,7 +946,7 @@
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avformat.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
+        <state relative-caret-position="39501">
           <caret line="2079" column="4" lean-forward="false" selection-start-line="2079" selection-start-column="4" selection-end-line="2079" selection-end-column="4" />
           <folding />
         </state>
@@ -831,7 +954,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="190">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
@@ -839,7 +962,7 @@
     </entry>
     <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="81016">
           <caret line="4264" column="4" lean-forward="false" selection-start-line="4264" selection-start-column="4" selection-end-line="4264" selection-end-column="4" />
           <folding />
         </state>
@@ -847,10 +970,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="439" column="41" lean-forward="false" selection-start-line="439" selection-start-column="41" selection-end-line="439" selection-end-column="41" />
+        <state relative-caret-position="209">
+          <caret line="115" column="23" lean-forward="false" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1490462004000" expanded="true" signature="386:495" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="658:1644" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="1753:5516" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="5708:11114" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="11187:12217" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="12313:14042" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="14124:15540" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="15594:16041" ph="{...}" />
+            <marker date="1490462004000" expanded="true" signature="16054:20824" ph="{...}" />
           </folding>
         </state>
       </provider>
