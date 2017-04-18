@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "libavutil/log.h"
+#include "libavformat/avformat.h"
+
+#define Test(x,y) (x##y)
 
 void fun(int a, ...) {
     va_list pp;
@@ -21,9 +24,14 @@ void my_logoutput(void *ptr, int level, const char *fmt, va_list vl) {
 
 
 int main() {
+    av_log(NULL, AV_LOG_INFO, "%d\n", Test(123, 456));
+
     fun(20, 40, 60, 80, 0);
 
     // av_log_set_callback(my_logoutput);
+
+    av_register_all();
+    AVFormatContext *fc = avformat_alloc_context();
 
     int log = av_log_get_level();
     av_log(NULL, AV_LOG_INFO, "%d\n", log);
@@ -37,5 +45,7 @@ int main() {
     av_log(NULL, AV_LOG_ERROR, "Hello World\n");
 
     printf("\033[33m Hello World. \033[0m \n");
+
+
     return 0;
 }
