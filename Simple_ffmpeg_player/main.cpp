@@ -24,7 +24,7 @@ int main() {
     int ret, got_picture;
     struct SwsContext *img_convert_ctx;
 
-    char filePath[] = "/Users/biezhihua/Downloads/biezhihua.mp4";
+    char filePath[] = "/Users/biezhihua/Downloads/test.mkv";
 
     // SDL
 
@@ -59,7 +59,7 @@ int main() {
     videoIndex = -1;
 
     for (int i = 0; i < pFormatCtx->nb_streams; ++i) {
-        if (pFormatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
+        if (pFormatCtx->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
             videoIndex = i;
             break;
         }
@@ -70,8 +70,9 @@ int main() {
         return -1;
     }
 
-    pCodecCtx = pFormatCtx->streams[videoIndex]->codec;
-    pCodec = avcodec_find_decoder(pCodecCtx->codec_id);
+    pCodec = avcodec_find_decoder(pFormatCtx->streams[videoIndex]->codecpar->codec_id);
+    pCodecCtx = avcodec_alloc_context3(pCodec);
+    avcodec_parameters_to_context(pCodecCtx, pFormatCtx->streams[videoIndex]->codecpar);
 
     if (pCodec == NULL) {
         printf("Codec not found.\n");
