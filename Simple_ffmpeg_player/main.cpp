@@ -21,7 +21,7 @@ int main() {
     unsigned char *out_buffer;
     AVPacket *packet;
     int y_size;
-    int ret, got_picture;
+    int ret;
     struct SwsContext *img_convert_ctx;
 
     char filePath[] = "/Users/biezhihua/Downloads/test.mkv";
@@ -33,7 +33,7 @@ int main() {
     SDL_Window *screen;
     SDL_Renderer *sdlRenderer;
     SDL_Texture *sdlTexture;
-    SDL_Rect sdlRect;
+    SDL_Rect sdlRect, sdlRect1, sdlRect2, sdlRect3;
 
     FILE *fp_yuv;
 
@@ -52,7 +52,7 @@ int main() {
     }
 
     AVDictionaryEntry *m = NULL;
-    while(m = av_dict_get(pFormatCtx->metadata,"",m,AV_DICT_IGNORE_SUFFIX)) {
+    while (m = av_dict_get(pFormatCtx->metadata, "", m, AV_DICT_IGNORE_SUFFIX)) {
         printf("key:%s value:%s \n", m->key, m->value);
     }
 
@@ -87,8 +87,8 @@ int main() {
     pFrame = av_frame_alloc();
     pFrameYUV = av_frame_alloc();
 
-    out_buffer = (unsigned char *) av_malloc(
-            av_image_get_buffer_size(AV_PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height, 1));
+    int size = av_image_get_buffer_size(AV_PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height, 1);
+    out_buffer = (unsigned char *) av_malloc(size);
 
     av_image_fill_arrays(pFrameYUV->data, pFrameYUV->linesize, out_buffer, AV_PIX_FMT_YUV420P, pCodecCtx->width,
                          pCodecCtx->height, 1);
@@ -111,8 +111,8 @@ int main() {
         return -1;
     }
 
-    screen_w = pCodecCtx->width;
-    screen_h = pCodecCtx->height;
+    screen_w = pCodecCtx->width / 2;
+    screen_h = pCodecCtx->height / 2;
 
     // SDL
     screen = SDL_CreateWindow("Simplest ffmpeg player's Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
@@ -132,40 +132,69 @@ int main() {
     sdlRect.w = screen_w;
     sdlRect.h = screen_h;
 
+    sdlRect1.x = screen_w;
+    sdlRect1.y = 0;
+    sdlRect1.w = screen_w;
+    sdlRect1.h = screen_h;
+
+    sdlRect2.x = 0;
+    sdlRect2.y = screen_h;
+    sdlRect2.w = screen_w;
+    sdlRect2.h = screen_h;
+
+    sdlRect3.x = screen_w;
+    sdlRect3.y = screen_h;
+    sdlRect3.w = screen_w;
+    sdlRect3.h = screen_h;
 
     while (av_read_frame(pFormatCtx, packet) >= 0) {
         if (packet->stream_index == videoIndex) {
-            ret = avcodec_decode_video2(pCodecCtx, pFrame, &got_picture, packet);
-            if (ret < 0) {
+            ret = avcodec_send_packet(pCodecCtx, packet);
+            if (ret < 0 && ret != AVERROR_EOF) {
                 printf("Decode Error.\n");
-                return -1;
+                return ret;
             }
-            if (got_picture) {
-                sws_scale(img_convert_ctx, (const uint8_t *const *) pFrame->data, pFrame->linesize, 0,
-                          pCodecCtx->height, pFrameYUV->data,
-                          pFrameYUV->linesize);
+            ret = avcodec_receive_frame(pCodecCtx, pFrame);
+            if (ret < 0 && ret != AVERROR(EAGAIN)) {
+                printf("Decode Error.\n");
+                return ret;
+            }
+            sws_scale(img_convert_ctx, (const uint8_t *const *) pFrame->data, pFrame->linesize, 0,
+                      pCodecCtx->height, pFrameYUV->data,
+                      pFrameYUV->linesize);
 
 #if OUTPUT_YUV420P
-                y_size = pCodecCtx->width * pCodecCtx->height;
-                fwrite(pFrameYUV->data[0], 1, y_size, fp_yuv);
-                fwrite(pFrameYUV->data[1], 1, y_size / 4, fp_yuv);
-                fwrite(pFrameYUV->data[2], 1, y_size / 4 / fp_yuv);
+            y_size = pCodecCtx->width * pCodecCtx->height;
+            fwrite(pFrameYUV->data[0], 1, y_size, fp_yuv);
+            fwrite(pFrameYUV->data[1], 1, y_size / 4, fp_yuv);
+            fwrite(pFrameYUV->data[2], 1, y_size / 4 / fp_yuv);
 #endif
 
 #if 0
-                SDL_UpdateTexture( sdlTexture, NULL, pFrameYUV->data[0], pFrameYUV->linesize[0] );
+            SDL_UpdateTexture( sdlTexture, NULL, pFrameYUV->data[0], pFrameYUV->linesize[0] );
 #else
-                SDL_UpdateYUVTexture(sdlTexture, &sdlRect,
-                                     pFrameYUV->data[0], pFrameYUV->linesize[0],
-                                     pFrameYUV->data[1], pFrameYUV->linesize[1],
-                                     pFrameYUV->data[2], pFrameYUV->linesize[2]);
+            SDL_UpdateYUVTexture(sdlTexture, &sdlRect,
+                                 pFrameYUV->data[0], pFrameYUV->linesize[0],
+                                 pFrameYUV->data[1], pFrameYUV->linesize[1],
+                                 pFrameYUV->data[2], pFrameYUV->linesize[2]);
+            SDL_UpdateYUVTexture(sdlTexture, &sdlRect1,
+                                 pFrameYUV->data[0], pFrameYUV->linesize[0],
+                                 pFrameYUV->data[1], pFrameYUV->linesize[1],
+                                 pFrameYUV->data[2], pFrameYUV->linesize[2]);
+            SDL_UpdateYUVTexture(sdlTexture, &sdlRect2,
+                                 pFrameYUV->data[0], pFrameYUV->linesize[0],
+                                 pFrameYUV->data[1], pFrameYUV->linesize[1],
+                                 pFrameYUV->data[2], pFrameYUV->linesize[2]);
+            SDL_UpdateYUVTexture(sdlTexture, &sdlRect3,
+                                 pFrameYUV->data[0], pFrameYUV->linesize[0],
+                                 pFrameYUV->data[1], pFrameYUV->linesize[1],
+                                 pFrameYUV->data[2], pFrameYUV->linesize[2]);
 #endif
-                SDL_RenderClear(sdlRenderer);
-                SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, &sdlRect);
-                SDL_RenderPresent(sdlRenderer);
+            SDL_RenderClear(sdlRenderer);
+            SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, &sdlRect);
+            SDL_RenderPresent(sdlRenderer);
 
-                SDL_Delay(40);
-            }
+            SDL_Delay(40);
         }
         av_packet_unref(packet);
     }
@@ -173,11 +202,14 @@ int main() {
     //flush decoder
     //FIX: Flush Frames remained in Codec
     while (1) {
-        ret = avcodec_decode_video2(pCodecCtx, pFrame, &got_picture, packet);
-        if (ret < 0)
+        ret = avcodec_send_packet(pCodecCtx, packet);
+        if (ret < 0 && ret != AVERROR(AVERROR_EOF)) {
             break;
-        if (!got_picture)
+        }
+        ret = avcodec_receive_frame(pCodecCtx, pFrame);
+        if (ret < 0 && ret != AVERROR(AVERROR_EOF)) {
             break;
+        }
         sws_scale(img_convert_ctx, (const unsigned char *const *) pFrame->data, pFrame->linesize, 0, pCodecCtx->height,
                   pFrameYUV->data, pFrameYUV->linesize);
 #if OUTPUT_YUV420P
