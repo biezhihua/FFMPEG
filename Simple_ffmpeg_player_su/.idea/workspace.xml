@@ -25,43 +25,30 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
-                  <caret line="160" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="160" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#35#66#0" expanded="true" />
-                    <element signature="e#2870#2905#0" expanded="true" />
-                    <element signature="e#4831#5063#0" expanded="true" />
-                    <element signature="e#5090#5172#0" expanded="true" />
-                    <element signature="e#7128#7351#0" expanded="true" />
-                    <element signature="e#7790#7805#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="swscale.h" pinned="false" current-in-tab="true">
-            <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libswscale/swscale.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="204" column="70" lean-forward="false" selection-start-line="204" selection-start-column="70" selection-end-line="204" selection-end-column="70" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+              <folding>
+                <element signature="e#35#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avcodec.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="4264" column="4" lean-forward="false" selection-start-line="4264" selection-start-column="4" selection-end-line="4264" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -104,8 +91,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="244" />
+    <option name="y" value="35" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -130,7 +119,6 @@
     <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="SearchEverywhereHistoryKey" value="AVFrame&#9;null&#9;null&#10;AVCODEC&#9;null&#9;null&#10;AVCodecID&#9;null&#9;null&#10;AVStream&#9;null&#9;null&#10;AVCodecContext&#9;null&#9;null&#10;AVIOContext&#9;null&#9;null&#10;AV_TIME_BASE&#9;null&#9;null&#10;AVFormatContext&#9;null&#9;null&#10;AVInputFormat&#9;null&#9;null" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -408,23 +396,25 @@
       <workItem from="1492580848391" duration="1050000" />
       <workItem from="1492613672149" duration="3315000" />
       <workItem from="1492698763516" duration="3037000" />
-      <workItem from="1492702520947" duration="208000" />
-      <workItem from="1492862007595" duration="659000" />
+      <workItem from="1492702520947" duration="192000" />
+      <workItem from="1492702743869" duration="524000" />
+      <workItem from="1492858820753" duration="3228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28578000" />
+    <option name="totallyTimeSpent" value="31655000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="244" y="35" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24929178" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258278" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944608" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3258278" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75870645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -432,7 +422,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587063" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -477,7 +466,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>86</line>
+          <line>43</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -492,11 +481,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#35#66#0" expanded="true" />
-            <element signature="e#2870#2905#0" expanded="true" />
-            <element signature="e#4831#5063#0" expanded="true" />
-            <element signature="e#5090#5172#0" expanded="true" />
-            <element signature="e#7128#7351#0" expanded="true" />
-            <element signature="e#7790#7805#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -526,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83847">
           <caret line="4413" column="5" lean-forward="false" selection-start-line="4413" selection-start-column="5" selection-end-line="4413" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,11 +555,6 @@
           <caret line="26" column="57" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="e#35#66#0" expanded="true" />
-            <element signature="e#2870#2905#0" expanded="true" />
-            <element signature="e#4831#5063#0" expanded="true" />
-            <element signature="e#5090#5172#0" expanded="true" />
-            <element signature="e#7128#7351#0" expanded="true" />
-            <element signature="e#7790#7805#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83847">
           <caret line="4413" column="5" lean-forward="false" selection-start-line="4413" selection-start-column="5" selection-end-line="4413" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,11 +622,6 @@
           <caret line="26" column="57" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="e#35#66#0" expanded="true" />
-            <element signature="e#2870#2905#0" expanded="true" />
-            <element signature="e#4831#5063#0" expanded="true" />
-            <element signature="e#5090#5172#0" expanded="true" />
-            <element signature="e#7128#7351#0" expanded="true" />
-            <element signature="e#7790#7805#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83847">
           <caret line="4413" column="5" lean-forward="false" selection-start-line="4413" selection-start-column="5" selection-end-line="4413" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,11 +689,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#35#66#0" expanded="true" />
-            <element signature="e#2870#2905#0" expanded="true" />
-            <element signature="e#4831#5063#0" expanded="true" />
-            <element signature="e#5090#5172#0" expanded="true" />
-            <element signature="e#7128#7351#0" expanded="true" />
-            <element signature="e#7790#7805#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83847">
           <caret line="4413" column="5" lean-forward="false" selection-start-line="4413" selection-start-column="5" selection-end-line="4413" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="462" column="37" lean-forward="false" selection-start-line="462" selection-start-column="37" selection-end-line="462" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="239" column="38" lean-forward="false" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,14 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="2248" column="79" lean-forward="false" selection-start-line="2248" selection-start-column="72" selection-end-line="2248" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="4752" column="4" lean-forward="false" selection-start-line="4752" selection-start-column="4" selection-end-line="4752" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -882,17 +836,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="4264" column="4" lean-forward="false" selection-start-line="4264" selection-start-column="4" selection-end-line="4264" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="160" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="160" selection-end-column="13" />
+        <state relative-caret-position="393">
+          <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
           <folding>
             <element signature="e#35#66#0" expanded="true" />
-            <element signature="e#2870#2905#0" expanded="true" />
-            <element signature="e#4831#5063#0" expanded="true" />
-            <element signature="e#5090#5172#0" expanded="true" />
-            <element signature="e#7128#7351#0" expanded="true" />
-            <element signature="e#7790#7805#0" expanded="true" />
           </folding>
         </state>
       </provider>
