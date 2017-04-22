@@ -25,43 +25,45 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
-                  <caret line="160" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="160" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#35#66#0" expanded="true" />
-                    <element signature="e#2870#2905#0" expanded="true" />
-                    <element signature="e#4831#5063#0" expanded="true" />
-                    <element signature="e#5090#5172#0" expanded="true" />
-                    <element signature="e#7128#7351#0" expanded="true" />
-                    <element signature="e#7790#7805#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="swscale.h" pinned="false" current-in-tab="true">
-            <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libswscale/swscale.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="204" column="70" lean-forward="false" selection-start-line="204" selection-start-column="70" selection-end-line="204" selection-end-column="70" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2869">
+              <caret line="151" column="56" lean-forward="false" selection-start-line="151" selection-start-column="56" selection-end-line="151" selection-end-column="56" />
+              <folding>
+                <element signature="e#35#66#0" expanded="true" />
+                <element signature="e#2870#2905#0" expanded="true" />
+                <element signature="e#4831#5063#0" expanded="true" />
+                <element signature="e#5090#5172#0" expanded="true" />
+                <element signature="e#7128#7351#0" expanded="true" />
+                <element signature="e#7790#7805#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avcodec.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="692">
+              <caret line="5137" column="4" lean-forward="false" selection-start-line="5137" selection-start-column="4" selection-end-line="5137" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -104,11 +106,12 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -121,7 +124,22 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simple_ffmpeg_player" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simple_ffmpeg_player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
@@ -129,8 +147,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="AVFrame&#9;null&#9;null&#10;AVCODEC&#9;null&#9;null&#10;AVCodecID&#9;null&#9;null&#10;AVStream&#9;null&#9;null&#10;AVCodecContext&#9;null&#9;null&#10;AVIOContext&#9;null&#9;null&#10;AV_TIME_BASE&#9;null&#9;null&#10;AVFormatContext&#9;null&#9;null&#10;AVInputFormat&#9;null&#9;null" />
-    <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="av_parser_parse2&#9;null&#9;null&#10;AVFrame&#9;null&#9;null&#10;AVCODEC&#9;null&#9;null&#10;AVCodecID&#9;null&#9;null&#10;AVStream&#9;null&#9;null&#10;AVCodecContext&#9;null&#9;null&#10;AVIOContext&#9;null&#9;null&#10;AV_TIME_BASE&#9;null&#9;null&#10;AVFormatContext&#9;null&#9;null&#10;AVInputFormat&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -409,18 +426,20 @@
       <workItem from="1492613672149" duration="3315000" />
       <workItem from="1492698763516" duration="3037000" />
       <workItem from="1492702520947" duration="208000" />
-      <workItem from="1492862007595" duration="659000" />
+      <workItem from="1492862007595" duration="1642000" />
+      <workItem from="1492866197988" duration="10000" />
+      <workItem from="1492866218499" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28578000" />
+    <option name="totallyTimeSpent" value="29579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24929178" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944608" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -541,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43073">
           <caret line="2267" column="4" lean-forward="false" selection-start-line="2267" selection-start-column="4" selection-end-line="2267" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43073">
           <caret line="2267" column="4" lean-forward="false" selection-start-line="2267" selection-start-column="4" selection-end-line="2267" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43073">
           <caret line="2267" column="4" lean-forward="false" selection-start-line="2267" selection-start-column="4" selection-end-line="2267" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43073">
           <caret line="2267" column="4" lean-forward="false" selection-start-line="2267" selection-start-column="4" selection-end-line="2267" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,13 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake/FindSDL2.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1349">
@@ -838,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="462" column="37" lean-forward="false" selection-start-line="462" selection-start-column="37" selection-end-line="462" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="239" column="38" lean-forward="false" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,15 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="2248" column="79" lean-forward="false" selection-start-line="2248" selection-start-column="72" selection-end-line="2248" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="4752" column="4" lean-forward="false" selection-start-line="4752" selection-start-column="4" selection-end-line="4752" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,14 +874,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="204" column="70" lean-forward="false" selection-start-line="204" selection-start-column="70" selection-end-line="204" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="160" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="160" selection-end-column="13" />
+        <state relative-caret-position="2869">
+          <caret line="151" column="56" lean-forward="false" selection-start-line="151" selection-start-column="56" selection-end-line="151" selection-end-column="56" />
           <folding>
             <element signature="e#35#66#0" expanded="true" />
             <element signature="e#2870#2905#0" expanded="true" />
@@ -894,6 +889,22 @@
             <element signature="e#7128#7351#0" expanded="true" />
             <element signature="e#7790#7805#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="5137" column="4" lean-forward="false" selection-start-line="5137" selection-start-column="4" selection-end-line="5137" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
