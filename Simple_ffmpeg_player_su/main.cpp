@@ -114,6 +114,12 @@ int main() {
 
     av_dump_format(pFormatCtx, 0, filepath, 0);
 
+    AVDictionaryEntry *m = NULL;
+
+    while (m = av_dict_get(pFormatCtx->metadata, "", m, AV_DICT_IGNORE_SUFFIX)) {
+        printf("key=%s value=%s \n", m->key, m->value);
+    }
+
     img_convert_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height,
                                      pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height, AV_PIX_FMT_YUV420P,
                                      SWS_BICUBIC, NULL, NULL, NULL);
