@@ -55,7 +55,7 @@ int main() {
     int framecnt = 0;
 
     // Input raw YUV
-    FILE *in_file = fopen("", "rb");
+    FILE *in_file = fopen("../ds_480x272.yuv", "rb");
 
     // Input data's width and height
     int in_w = 480, in_h = 272;
@@ -130,7 +130,7 @@ int main() {
         goto end;
     }
 
-    if (avcodec_open2(pCodecCtx, pCodec, param) < 0) {
+    if (avcodec_open2(pCodecCtx, pCodec, &param) < 0) {
         printf("Failed to open encoder\n");
         goto end;
     }

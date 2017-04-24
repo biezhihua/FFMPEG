@@ -1,0 +1,3 @@
+/Users/biezhihua/studyspace/FFMPEG/FFmpeg-YUV-2-HEVC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/biezhihua/studyspace/FFMPEG/FFmpeg-YUV-2-HEVC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/biezhihua/studyspace/FFMPEG/FFmpeg-YUV-2-HEVC/cmake-build-debug/CMakeFiles/FFmpeg_YUV_2_HEVC.dir
