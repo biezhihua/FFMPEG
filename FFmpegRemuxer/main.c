@@ -40,24 +40,28 @@ int main() {
     ofmt = ofmt_ctx->oformat;
 
     for (i = 0; i < ifmt_ctx->nb_streams; i++) {
-        // Create output AVStream according to input AVStream
         AVStream *in_stream = ifmt_ctx->streams[i];
-        AVStream *out_stream = avformat_new_stream(ofmt_ctx, in_stream->codec->codec);
-
+        AVCodec *codec = avcodec_find_decoder(in_stream->codecpar->codec_id);
+        AVStream *out_stream = avformat_new_stream(ofmt_ctx, codec);
         if (!out_stream) {
             printf("Failed allocating output stream\n");
             ret = AVERROR_UNKNOWN;
             goto end;
         }
-        // Copy the setting of AVCodecContext;
-        ret = avcodec_copy_context(out_stream->codec, in_stream->codec);
+        AVCodecContext *pCodecCtx = avcodec_alloc_context3(codec);
+        ret = avcodec_parameters_to_context(pCodecCtx, in_stream->codecpar);
         if (ret < 0) {
             printf("Failed to copy context input to output stream codec context\n");
             goto end;
         }
-        out_stream->codec->codec_tag = 0;
+        pCodecCtx->codec_tag = 0;
         if (ofmt_ctx->oformat->flags & AVFMT_GLOBALHEADER) {
-            out_stream->codec->flags |= CODEC_FLAG_GLOBAL_HEADER;
+            pCodecCtx->flags |= CODEC_FLAG_GLOBAL_HEADER;
+        }
+        ret = avcodec_parameters_from_context(out_stream->codecpar, pCodecCtx);
+        if (ret < 0) {
+            printf("Failed to copy context input to output stream codec context\n");
+            goto end;
         }
     }
 
@@ -112,7 +116,7 @@ int main() {
         }
 
         printf("Write %8d frames to output file\n", frame_index);
-        av_free_packet(&pkt);
+        av_packet_unref(&pkt);
         frame_index++;
     }
 

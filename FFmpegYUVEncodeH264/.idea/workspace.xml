@@ -114,10 +114,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="280" />
-    <option name="y" value="87" />
-    <option name="width" value="1160" />
-    <option name="height" value="740" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -157,6 +155,7 @@
     <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="SearchEverywhereHistoryKey" value="av_image_get_buffer_size&#9;null&#9;null" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -429,7 +428,7 @@
     <option name="totallyTimeSpent" value="5363000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="87" width="1160" height="740" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24923077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -499,6 +498,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12312">
+          <caret line="648" column="4" lean-forward="false" selection-start-line="648" selection-start-column="4" selection-end-line="648" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavformat/avformat.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38494">
+          <caret line="2026" column="29" lean-forward="false" selection-start-line="2026" selection-start-column="29" selection-end-line="2026" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint8_t.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ffmpeg/3.1.4/include/libavcodec/avcodec.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99940">
+          <caret line="5260" column="4" lean-forward="false" selection-start-line="5260" selection-start-column="4" selection-end-line="5260" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2603">
+          <caret line="137" column="27" lean-forward="false" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
