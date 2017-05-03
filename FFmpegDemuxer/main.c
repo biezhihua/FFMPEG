@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <libavformat/avformat.h>
 
-#define USE_H264BSF 1
+#define USE_H264BSF 0
 
 int main() {
 
@@ -13,10 +13,8 @@ int main() {
     int videoindex = -1, audioindex = -1;
     int frame_index = 0;
 
-    const char *in_filename = "/Users/biezhihua/workspace/Videos/biezhihua.mp4";//Input file URL
-    //char *in_filename  = "cuc_ieschool.mkv";
+    const char *in_filename = "/Users/biezhihua/workspace/测试视频库/test.mp4";//Input file URL
     const char *out_filename_v = "../biezhihua.h264";//Output file URL
-    //char *out_filename_a = "cuc_ieschool.mp3";
     const char *out_filename_a = "../biezhihua.aac";
 
     av_register_all();
@@ -53,13 +51,14 @@ int main() {
         AVStream *in_stream = ifmt_ctx->streams[i];
         AVStream *out_stream = NULL;
 
-        if (ifmt_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
+        AVCodec *codec = avcodec_find_decoder(in_stream->codecpar->codec_id);
+        if (ifmt_ctx->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
             videoindex = i;
-            out_stream = avformat_new_stream(ofmt_ctx_v, in_stream->codec->codec);
+            out_stream = avformat_new_stream(ofmt_ctx_v, codec);
             ofmt_ctx = ofmt_ctx_v;
-        } else if (ifmt_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_AUDIO) {
+        } else if (ifmt_ctx->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_AUDIO) {
             audioindex = i;
-            out_stream = avformat_new_stream(ofmt_ctx_a, in_stream->codec->codec);
+            out_stream = avformat_new_stream(ofmt_ctx_a, codec);
             ofmt_ctx = ofmt_ctx_a;
         } else {
             break;
@@ -70,15 +69,20 @@ int main() {
             ret = AVERROR_UNKNOWN;
             goto end;
         }
-        //Copy the settings of AVCodecContext
-        if (avcodec_copy_context(out_stream->codec, in_stream->codec) < 0) {
+
+        AVCodecContext *codecContext = avcodec_alloc_context3(codec);
+        if ((ret = avcodec_parameters_to_context(codecContext, in_stream->codecpar)) < 0) {
+            printf("Failed to copy context input to output stream codec context\n");
+            goto end;
+        }
+        if ((ret = avcodec_parameters_from_context(out_stream->codecpar, codecContext)) < 0) {
             printf("Failed to copy context from input to output stream codec context\n");
             goto end;
         }
-        out_stream->codec->codec_tag = 0;
-
-        if (ofmt_ctx->oformat->flags & AVFMT_GLOBALHEADER)
-            out_stream->codec->flags |= CODEC_FLAG_GLOBAL_HEADER;
+        codecContext->codec_tag = 0;
+        if (ofmt_ctx->oformat->flags & AVFMT_GLOBALHEADER) {
+            codecContext->flags |= AV_CODEC_FLAG_GLOBAL_HEADER;
+        }
     }
 
     //Dump Format------------------
@@ -90,7 +94,6 @@ int main() {
     av_dump_format(ofmt_ctx_a, 0, out_filename_a, 1);
     printf("\n======================================\n");
 
-
     //Open output file
     if (!(ofmt_v->flags & AVFMT_NOFILE)) {
         if (avio_open(&ofmt_ctx_v->pb, out_filename_v, AVIO_FLAG_WRITE) < 0) {
@@ -98,7 +101,6 @@ int main() {
             goto end;
         }
     }
-
     if (!(ofmt_a->flags & AVFMT_NOFILE)) {
         if (avio_open(&ofmt_ctx_a->pb, out_filename_a, AVIO_FLAG_WRITE) < 0) {
             printf("Could not open output file '%s'", out_filename_a);
@@ -117,7 +119,7 @@ int main() {
     }
 
 #if USE_H264BSF
-    AVBitStreamFilterContext* h264bsfc =  av_bitstream_filter_init("h264_mp4toannexb");
+    AVBitStreamFilterContext *h264bsfc = av_bitstream_filter_init("h264_mp4toannexb");
 #endif
 
     while (1) {
@@ -127,7 +129,6 @@ int main() {
         if (av_read_frame(ifmt_ctx, &pkt) < 0)
             break;
         in_stream = ifmt_ctx->streams[pkt.stream_index];
-
 
         if (pkt.stream_index == videoindex) {
             out_stream = ofmt_ctx_v->streams[0];
@@ -144,12 +145,9 @@ int main() {
             continue;
         }
 
-
         //Convert PTS/DTS
-        pkt.pts = av_rescale_q_rnd(pkt.pts, in_stream->time_base, out_stream->time_base,
-                                   (AV_ROUND_NEAR_INF | AV_ROUND_PASS_MINMAX));
-        pkt.dts = av_rescale_q_rnd(pkt.dts, in_stream->time_base, out_stream->time_base,
-                                   (AV_ROUND_NEAR_INF | AV_ROUND_PASS_MINMAX));
+        pkt.pts = av_rescale_q_rnd(pkt.pts, in_stream->time_base, out_stream->time_base, (AV_ROUND_NEAR_INF | AV_ROUND_PASS_MINMAX));
+        pkt.dts = av_rescale_q_rnd(pkt.dts, in_stream->time_base, out_stream->time_base, (AV_ROUND_NEAR_INF | AV_ROUND_PASS_MINMAX));
         pkt.duration = av_rescale_q(pkt.duration, in_stream->time_base, out_stream->time_base);
         pkt.pos = -1;
         pkt.stream_index = 0;
@@ -159,7 +157,7 @@ int main() {
             break;
         }
         //printf("Write %8d frames to output file\n",frame_index);
-        av_free_packet(&pkt);
+        av_packet_unref(&pkt);
         frame_index++;
     }
 

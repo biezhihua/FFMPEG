@@ -11,7 +11,7 @@ int main() {
     int videoIndex = -1;
     int audioIndex = -1;
 
-    const char *in_filename = "/Users/biezhihua/workspace/Videos/biezhihua.mp4";
+    const char *in_filename = "/Users/biezhihua/workspace/测试视频库/test.mp4";
     const char *out_filename_v = "../test.h264";
     const char *out_filename_a = "../test.aac";
 
@@ -28,9 +28,9 @@ int main() {
     }
 
     for (i = 0; i < ifmt_ctx->nb_streams; ++i) {
-        if (ifmt_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
+        if (ifmt_ctx->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
             videoIndex = i;
-        } else if (ifmt_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_AUDIO) {
+        } else if (ifmt_ctx->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_AUDIO) {
             audioIndex = i;
         }
     }

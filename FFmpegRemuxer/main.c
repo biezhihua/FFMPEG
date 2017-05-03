@@ -41,7 +41,7 @@ int main() {
 
     for (i = 0; i < ifmt_ctx->nb_streams; i++) {
         AVStream *in_stream = ifmt_ctx->streams[i];
-        AVCodec *codec = avcodec_find_decoder(in_stream->codecpar->codec_id);
+        AVCodec *codec =  avcodec_find_decoder(in_stream->codecpar->codec_id);av
         AVStream *out_stream = avformat_new_stream(ofmt_ctx, codec);
         if (!out_stream) {
             printf("Failed allocating output stream\n");
